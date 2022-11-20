@@ -1,0 +1,8 @@
+//Массивы. Задание 1
+
+public class Task1 {
+    public static void main(String[] args) {
+        char name [] = new char [] {'B','U','L','A','T'}; //Создаем массив name, состоящий из букв БУЛАТ
+        System.out.print (name); //выводим в консоль имя
+    }
+}
