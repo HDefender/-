@@ -1,12 +1,12 @@
-//Task 2 - Overload method
+//Task 2
 public class Task2 {
     public static void main(String[] args) {
         System.out.println(sum(5, 10)); //15
         System.out.println(sum(5.0, 10.0)); //15.0
-        System.out.println(sum('A', 'B')); //aB
-        System.out.println(sum(127, -126)); //1
-        System.out.println(sum(1272858495, 469856979));
-        System.out.println(sum(10, 12)); //false
+        System.out.println(sum('A', 'B')); //AB
+        System.out.println(sum((byte)127, (byte)-126)); //1
+        System.out.println(sum((long)1272858495, (long) 469856979));
+        System.out.println(sum((boolean) true, (boolean) false)); //true
     }
 
     static int sum(int a, int b) {
