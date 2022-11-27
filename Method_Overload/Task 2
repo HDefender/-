@@ -1,0 +1,35 @@
+//Task 2 - Overload method
+public class Task2 {
+    public static void main(String[] args) {
+        System.out.println(sum(5, 10)); //15
+        System.out.println(sum(5.0, 10.0)); //15.0
+        System.out.println(sum('A', 'B')); //aB
+        System.out.println(sum(127, -126)); //1
+        System.out.println(sum(1272858495, 469856979));
+        System.out.println(sum(10, 12)); //false
+    }
+
+    static int sum(int a, int b) {
+        return a + b;
+    }
+
+    static double sum(double a, double b) {
+        return a + b;
+    }
+
+    static char sum(char a, char b) {
+        return (char) (a + b);
+    }
+
+    static byte sum(byte a, byte b) {
+        return (byte) (a + b);
+    }
+
+    static long sum(long a, long b) {
+        return (long) (a + b);
+    }
+
+    static boolean sum(boolean a, boolean b) {
+        return (boolean) a != b;
+    }
+}
