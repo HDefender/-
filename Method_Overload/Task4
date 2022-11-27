@@ -1,0 +1,21 @@
+import java.util.Scanner; //импортируем библиотеку сканер
+
+public class Task4 {
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in); //объявляем сканер
+        System.out.println("Введите число"); //строка со вводом числа
+        double a = scanner.nextInt(); //объявляем тип переменной, которая введена в консоль
+        scanner.close(); //закрываем консоль
+        doSquare(a); //метод doSquare, рассчитывающий корень
+        System.out.println(doSquare(a));
+    }
+   static double doSquare(double a) { //объявляем метод doSquare, на вход которого поступает введенное с консоли число
+            if (a == 1) { //если число равно 1, то возвращаем 1
+                return 1;
+            } 
+            else { //иначе рассчитываем рекурсию
+                double sqr = Math.sqrt((a-1) + (Math.sqrt(a)));
+                return sqr;
+            }
+        }
+    }
