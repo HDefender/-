@@ -1,0 +1,24 @@
+import java.util.Scanner; //импортируем библиотеку сканер
+
+public class Task3 {
+    public static void main (String[] args) {
+        Scanner scanner = new Scanner(System.in); //объявляем сканер
+        System.out.println("Введите число"); //строка со вводом числа
+        int a = scanner.nextInt(); //объявляем тип переменной, которая введена в консоль
+        scanner.close(); //закрываем консоль
+        int Fact = a * Factorial(a - 1); //вводим переменную Fact, которая будет вычислять факториал с помощью метода Factorial
+        System.out.println (Fact); //выводим переменную Fact
+        }
+    static int Factorial (int a) { //объявляем метод Factorial, на вход которого поступает введенное с консоли число
+        if (a == 1) { //если число равно 1, то возвращаем 1
+            return 1;
+        }
+        else { //иначе рассчитываем факториал
+            int Fact = 1;
+            Fact = a * Factorial(a - 1);
+            return Fact; //возвращаем значение Fact
+        }
+
+    }
+
+}
