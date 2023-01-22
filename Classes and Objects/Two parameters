@@ -35,7 +35,7 @@ public class Counter3 { // создаем класс счетчика
     }
     
     public static void main(String[] args) {
-        Counter3 sch = new Counter3 ("Chetn", 90); //создаем новый объект класса счетчик с входными параметрами
+        Counter3 sch = new Counter3 ("Chetn", 100); //создаем новый объект класса счетчик с входными параметрами
         sch.count(); // запускаем метод подсчета четных и нечетных чисел
     }
 }
