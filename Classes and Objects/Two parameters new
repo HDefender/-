@@ -1,0 +1,30 @@
+public class Counter4 { //создаем класс счетчика
+    String name; //поле названия
+    int number; //поле числа на входе
+
+    public Counter4(String name, int number) { //создаем конструктор с 2 полями
+        this.name = name;
+        this.number = number;
+    }
+    public void getCalculate() { //создаем метод для расчета
+        int honest = 0; //переменная для четных чисел
+        int odd = 0;// переменная для нечетных чисел
+
+        for (int i = 0; i < number; number --) { //запускаем цикл for от 0 до введенного числа, с уменьшением введенного числа на единицу при новом проходе цикла
+            if (number % 2 == 0) { // если остаток деления на 2 введенного числа равен 0
+                honest++; //переменная четных чисел увеличивается на 1
+            } else { // в противном случае
+            odd++; //перкменная нечетных чисел увеличивается на 1
+            }
+        }
+        System.out.println("Количество четных чисел " + honest); // выводим на экран
+        System.out.println("Количество нечетных чисел " + odd);
+    }
+     
+     public static void main(String[] args) { 
+        Counter4 calc = new Counter4("Wall", 100); //создаем объект calc класса Counter4
+            calc.getCalculate(); //запускаем метод подсчета
+
+    }
+
+}
