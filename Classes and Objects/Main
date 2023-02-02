@@ -1,0 +1,18 @@
+public class Main {
+    public static void main(String[] args) {
+        Counter calcHonest = new Counter("Wall", 0); // создаем новый объект
+        Counter calcOdd = new Counter("Brick", 0);// создаем новый объект
+
+
+        calcHonest.getCalculateHonest(); //вызываем метод подсчитать четные числа в объекте 
+
+        calcOdd.getCalculateOdd();//вызываем метод подсчитать нечетные числа в объекте 
+
+        calcHonest.incrimentOne(); //вызываем метод увеличить счетчик на один
+        
+        calcOdd.decrimentAny();//вызываем метод уменьшить счетчик на один
+
+        System.out.println(calcHonest.counter); //показать на экране информацию о счетчике
+        System.out.println(calcOdd.counter);
+        }
+}
